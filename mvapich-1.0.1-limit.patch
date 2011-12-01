@@ -1,0 +1,10 @@
+--- mvapich-1.0.1/mpid/ch_gen2/process/mpirun_rsh.h.limit	2008-09-17 21:52:01.000000000 -0400
++++ mvapich-1.0.1/mpid/ch_gen2/process/mpirun_rsh.h	2008-09-17 21:52:18.000000000 -0400
+@@ -61,6 +61,7 @@
+ #include <stdio.h>
+ #include <stdarg.h>
+ #include <unistd.h>
++#include <limits.h>
+ #ifdef MAC_OSX
+ #include <sys/wait.h>
+ #else

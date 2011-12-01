@@ -1,0 +1,7 @@
+%_mvapich_load \
+ . /etc/profile.d/modules.sh; \
+ module load mvapich-%{_arch}; \
+ export CFLAGS="$CFLAGS %{optflags}";
+%_mvapich_unload \
+ . /etc/profile.d/modules.sh; \
+ module unload mvapich-%{_arch};

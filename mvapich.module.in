@@ -1,0 +1,16 @@
+#%Module 1.0
+#
+#  mvapich module for use with 'environment-modules' package:
+#
+prepend-path	        PATH  		@LIBDIR@/bin
+prepend-path	        LD_LIBRARY_PATH @LIBDIR@/lib
+setenv 		        MPI_BIN         @LIBDIR@/bin
+setenv			MPI_SYSCONFIG	@LIBDIR@/etc
+setenv			MPI_FORTRAN_MOD_DIR	@FMODDIR@
+setenv			MPI_INCLUDE	@LIBDIR@/include
+setenv			MPI_LIB		@LIBDIR@/lib
+setenv			MPI_MAN		@MANDIR@
+setenv			MPI_PYTHON_SITEARCH	@PYSITEARCH@
+setenv			MPI_COMPILER	@COMPILER@
+setenv			MPI_SUFFIX	@SUFFIX@
+setenv			MPI_HOME	@LIBDIR@
